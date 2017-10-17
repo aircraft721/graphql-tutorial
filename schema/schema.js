@@ -9,8 +9,8 @@ const {
 } = graphql;
 
 const users = [
-    {id: 23, firstName: 'Bill', age: 20},
-    {id: 65, firstName: 'Nye', age: 21}
+    {id: "23", firstName: 'Bill', age: 20},
+    {id: "65", firstName: 'Nye', age: 21}
 ];
 
 const UserType = new GraphQLObjectType({
@@ -37,4 +37,4 @@ const RootQuery = new GraphQLObjectType({
 
 module.exports = new GraphQLSchema({
     query: RootQuery
-})
+});
